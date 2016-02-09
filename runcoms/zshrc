@@ -10,6 +10,12 @@ if [[ -s "${ZDOTDIR:-$HOME}/.zprezto/init.zsh" ]]; then
   source "${ZDOTDIR:-$HOME}/.zprezto/init.zsh"
 fi
 
+# maybe source machine-specific zshrc
+if [[ -s ".local/zshrc" ]]; then
+  source $HOME/.local/zshrc
+fi
+
 alias t='todo.sh -t'
 alias j='jupyter notebook'
+alias n='noted.sh'
 

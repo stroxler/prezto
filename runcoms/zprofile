@@ -47,7 +47,10 @@ path=(
   $path
 )
 
-source $HOME/.local/zprofile
+# maybe source machine-specific zprofile
+if [[ -s ".local/zprofile" ]]; then
+  source $HOME/.local/zprofile
+fi
 
 #
 # Less
@@ -74,3 +77,9 @@ if [[ ! -d "$TMPDIR" ]]; then
 fi
 
 TMPPREFIX="${TMPDIR%/}/zsh"
+
+#
+# Dropbox
+#
+
+export DROPBOXDIR="$HOME/Dropbox"
