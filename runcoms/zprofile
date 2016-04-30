@@ -78,8 +78,3 @@ fi
 
 TMPPREFIX="${TMPDIR%/}/zsh"
 
-#
-# Dropbox
-#
-
-export DROPBOXDIR="$HOME/Dropbox"
