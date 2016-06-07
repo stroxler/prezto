@@ -15,13 +15,5 @@ if [[ -s ".local/zshrc" ]]; then
   source "$HOME/.local/zshrc"
 fi
 
-# pyenv
-if which pyenv > /dev/null; then eval "$(pyenv init -)"; fi
-
-# Dropbox
-export DROPBOXDIR="$HOME/Dropbox"
-
-alias t='todo.sh -t'
-alias j='jupyter notebook'
-alias n='noted.sh'
-
+# source shared source from stroxler/config repo
+source "$HOME/shared-source.sh"
