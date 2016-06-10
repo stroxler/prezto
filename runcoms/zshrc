@@ -15,5 +15,9 @@ if [[ -s ".local/zshrc" ]]; then
   source "$HOME/.local/zshrc"
 fi
 
+# make vim mode more palatable by halving the key delay,
+# which is in tenths of a second
+export KEYTIMEOUT=2
+
 # source shared source from stroxler/config repo
 source "$HOME/shared-source.sh"
