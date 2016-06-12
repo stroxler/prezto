@@ -21,3 +21,9 @@ export KEYTIMEOUT=2
 
 # source shared source from stroxler/config repo
 source "$HOME/shared-source.sh"
+
+# make reloading environment easier
+alias sxrc='source ~/.zshrc'
+
+# source fzf bindings for zsh
+[ -f ~/.fzf.zsh ] && source ~/.fzf.zsh
